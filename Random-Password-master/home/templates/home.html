@@ -1,1 +1,75 @@
-<!DOCTYPE html>{% load static %}<html lang="en"><head> <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <meta name="description" content="Generate a Random and VERY STRONG Password and Download it in your device. Stop Malwaes and Spywares to spy on you and save your password.This Random Password will be unique for you and there is only 0.1% chance that very same password will be generated for other Users."><meta name="msvalidate.01" content="3C623252CD92CC9AB5FBED1392DB7C33" /> <title>Random Password Generator</title> <link rel="shortcut icon" href="{% static '/favicon.ico'%}"> <link rel="stylesheet" href="{% static 'Depd/bootstrap.min.css'%}"> <link rel="stylesheet" href="{% static 'Depd/font-awesome/css/font-awesome.css'%}"> <link rel="stylesheet" href="{% static 'home.css'%}"><meta name="google-site-verification" content="pEH5VScs3gxUljWYQllmWyGfLAwLuerKFMYi5RM2zVo" /></head> <body> <header> <nav class="navbar navbar-expand-sm navbar-dark fixed-top" role="navigation"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand mr-auto" href="#"><img src="{% static '/logo.png'%}" alt="logo image" id="logo">Random Password</a> <div class="collapse navbar-collapse" id="navbar"> <div class="container"> <ul class="navbar-nav mr-auto"> <li class="nav-item active"><a class="nav-link" href="#" name="Home Page">Home</a></li><li class="nav-item "><a class="nav-link" href="blog" name="Blog Page">Blog</a></li><li class="nav-item "><a class="nav-link" href="#address" name="Contact Page">Contact</a></li></ul> </div></div></nav> </header> <div id="black-border"> <div class="container" id="content1"> <div class="row"> <div class="col-12"> <h1 id="wel" class="text-center">WELCOME!</h1> </div><div class="col-12"> <p> <h3>GENERATE RANDOM PASSWORD</h3> </p></div></div></div><div class="container" id="content2"> <form action="{% url 'password' %}" method="GET"> <div class="form-group"> <div class="row offset-sm-4 offset-2"> <label class="col-2 col-sm-1 col-form-label" for="length-input"><h6>Length:&nbsp;&nbsp;</h6> </label> <div class=" col-sm-1 col-5"> <input type="number" name="select-number" min="6" max="20" value="12" selected='selected' placeholder="Length" id="length-input"></div></div><div class="row offset-sm-1" id="border"> <div class="col-10 col-sm-3"> <label for="UPPER" class="col-form-label"><h6>UPPER CASE :</h6> </label> <input TYPE="checkbox" name="UPPER" id="UPPER"></div><div class="col-10 col-sm-3"> <label for="specialcharacter" class="col-form-label"><h6>SPECIAL CHARACTER :</h6> </label> <input TYPE="checkbox" name="specialcharacter" id="specialcharacter"></div><div class="col-10 col-sm-3 "> <label for="number" class="col-form-label"><h6>NUMBER :</h6> </label> <input type="checkbox" name="number" id="number"></div><div class="col-10"> <label for="unique" class="col-form-label"><h6>Create a unique Password</h6> </label> <input type="checkbox" name="unique" id="unique"></div></div><button type="submit" class="btn-lg" id="submit-button" href="password">Generate Password&nbsp;<i class="fa fa-arrow-circle-right"></i></button></div></form> </div></div><footer> <div class="container" id="content3"> <div class="row"> <div class="col-12"> <span class="facebook-icon"><i class="fa fa-facebook fa-lg"></i></span> <span class="padding"><i class="fa fa-twitter fa-lg"></i></span> <span class="padding"><i class="fa fa-instagram fa-lg"></i></span> <span class="padding"><i class="fa fa-envelope-o fa-lg"></i></span> </div><div class="col-auto col-sm-12" style="margin-top: 2%;"> <span class="nav-text">Home |</span> <span class="nav-text"> Blog |</span> <span class="nav-text"> Feature Request |</span> <span class="nav-text"> Privacy Policy</span> </div><div class="col-12" id="copyright"> &copy; 2019-2020 The Password Company </div></div></div></footer> <script src="{% static 'Depd/jquery.slim.min.js'%}"></script> <script src="{% static 'Depd/popper.min.js'%}"></script> <script src="{% static 'Depd/bootstrap.min.js'%}"></script></body></html>
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Generate a Random and VERY STRONG Password and Download it in your device. Stop Malwaes and Spywares to spy on you and save your password.This Random Password will be unique for you and there is only 0.1% chance that very same password will be generated for other Users.">
+    <meta name="msvalidate.01" content="3C623252CD92CC9AB5FBED1392DB7C33" />
+    <meta name="google-site-verification" content="pEH5VScs3gxUljWYQllmWyGfLAwLuerKFMYi5RM2zVo" />
+    <title>Random Password Generator</title>
+    <meta name="google-site-verification" content="pEH5VScs3gxUljWYQllmWyGfLAwLuerKFMYi5RM2zVo" />
+    <link rel="shortcut icon" href="{% static '/favicon.ico'%}">
+    <link rel="stylesheet" href="{% static 'Depd/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'Depd/font-awesome/css/font-awesome.css'%}">
+    <link rel="stylesheet" href="{% static 'home.css'%}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" role="navigation"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand mr-auto"
+                href="#"><img src="{% static '/logo.png'%}" alt="logo image" id="logo">Random Password</a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="container">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#" name="Home Page">Home</a></li>
+                        <li class="nav-item "><a class="nav-link" href="blog" name="Blog Page">Blog</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#address" name="Contact Page">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="black-border">
+        <div class="container" id="content1">
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="wel" class="text-center">WELCOME!</h1>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <h3>GENERATE RANDOM PASSWORD</h3>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="content2">
+            <form action="{% url 'password' %}" method="GET">
+                <div class="form-group">
+                    <div class="row offset-sm-4 offset-2"> <label class="col-2 col-sm-1 col-form-label" for="length-input"><h6>Length:&nbsp;&nbsp;</h6> </label>
+                        <div class=" col-sm-1 col-5"> <input type="number" name="select-number" min="6" max="20" value="12" selected='selected' placeholder="Length" id="length-input"></div>
+                    </div>
+                    <div class="row offset-sm-1" id="border">
+                        <div class="col-10 col-sm-3"> <label for="UPPER" class="col-form-label"><h6>UPPER CASE :</h6> </label> <input TYPE="checkbox" name="UPPER" id="UPPER"></div>
+                        <div class="col-10 col-sm-3"> <label for="specialcharacter" class="col-form-label"><h6>SPECIAL CHARACTER :</h6> </label> <input TYPE="checkbox" name="specialcharacter" id="specialcharacter"></div>
+                        <div class="col-10 col-sm-3 "> <label for="number" class="col-form-label"><h6>NUMBER :</h6> </label> <input type="checkbox" name="number" id="number"></div>
+                        <div class="col-10"> <label for="unique" class="col-form-label"><h6>Create a unique Password</h6> </label> <input type="checkbox" name="unique" id="unique"></div>
+                    </div><button type="submit" class="btn-lg" id="submit-button" href="password">Generate Password&nbsp;<i class="fa fa-arrow-circle-right"></i></button></div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container" id="content3">
+            <div class="row">
+                <div class="col-12"> <span class="facebook-icon"><i class="fa fa-facebook fa-lg"></i></span> <span class="padding"><i class="fa fa-twitter fa-lg"></i></span> <span class="padding"><i class="fa fa-instagram fa-lg"></i></span> <span class="padding"><i class="fa fa-envelope-o fa-lg"></i></span>                    </div>
+                <div class="col-auto col-sm-12" style="margin-top: 2%;"> <span class="nav-text">Home |</span> <span class="nav-text"> Blog |</span> <span class="nav-text"> Feature Request |</span> <span class="nav-text"> Privacy Policy</span> </div>
+                <div class="col-12" id="copyright"> &copy; 2019-2020 The Password Company </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'Depd/jquery.slim.min.js'%}"></script>
+    <script src="{% static 'Depd/popper.min.js'%}"></script>
+    <script src="{% static 'Depd/bootstrap.min.js'%}"></script>
+</body>
+
+</html>
