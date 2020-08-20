@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bb8a64-26a1-4341-b44f-0f7ae38997d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-Password-master/home/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/home/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-Password-master/home/templates/final.html" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/home/templates/final.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Random-Password-master/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/home/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -1,1 +1,84 @@
-<!DOCTYPE html>{% load static %}<html lang="en"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><head> <title>Your Generated Random Password</title> <link rel="shortcut icon" href="{% static '/favicon.ico'%}"> <link rel="stylesheet" href="{% static 'Depd/bootstrap.min.css'%}"> <link rel="stylesheet" href="{% static 'Depd/font-awesome/css/font-awesome.css'%}"> <link rel="stylesheet" href="{% static 'final.css'%}"></head><body> <header> <nav class="navbar navbar-expand-sm navbar-dark fixed-top" role="navigation"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand mr-auto" href="#"><img src="{% static '/logo.png'%}" alt="logo image" id="logo">Random Password</a> <div class="collapse navbar-collapse" id="navbar"> <div class="container"> <ul class="navbar-nav mr-auto"> <li class="nav-item active"><a class="nav-link" href="#" name="Home Page">Home</a></li><li class="nav-item "><a class="nav-link" href="blog" name="Blog Page">Blog</a></li><li class="nav-item "><a class="nav-link" href="#address" name="Contact Page">Contact</a></li></ul> </div></div></nav> </header> <div class="container" id="content2"> <div class="row"> <div class="col-12"> <h1 class="text" role="text"> WOW!! Your Password is</h1> </div></div><div class="row"> <div class="col-12"> <h2 class="alert alert-success"><br><br>{{password}}</h2> </div></div><div class="row"> <div class="col-12"> <a href='back' role="button" class="btn" id="home"> <h3>Home <i class="fa fa-home"></i></h3> </a> </div></div><br><div class="row"> <div class="col-12"> <a href="download" download role="button" class="btn" id="download">Download&nbsp;<i class="fa fa-download"></i></a></div></div></div><br><p>* Reload the page to generate new password</p><p>* we don't save that password for user's safety so you are requested to download it</p><br><footer> <div class="container" id="content3"> <div class="row"> <div class="col-12"> <span class="facebook-icon"><i class="fa fa-facebook fa-lg"></i></span> <span class="padding"><i class="fa fa-twitter fa-lg"></i></span> <span class="padding"><i class="fa fa-instagram fa-lg"></i></span> <span class="padding"><i class="fa fa-envelope-o fa-lg"></i></span> </div><div class="col-auto col-sm-12" style="margin-top: 2%;"> <span class="nav-text">Home |</span> <span class="nav-text"> Blog |</span> <span class="nav-text"> Feature Request |</span> <span class="nav-text"> Privacy Policy</span> </div><div class="col-12" id="copyright"> &copy; 2019-2020 The Password Company </div></div></div></footer> <script src="{% static 'Depd/jquery.slim.min.js'%}"></script> <script src="{% static 'Depd/popper.min.js'%}"></script> <script src="{% static 'Depd/bootstrap.min.js'%}"></script></body></html>
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175902098-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175902098-1');
+</script>
+
+    <title>Your Generated Random Password</title>
+    <link rel="shortcut icon" href="{% static '/favicon.ico'%}">
+    <link rel="stylesheet" href="{% static 'Depd/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'Depd/font-awesome/css/font-awesome.css'%}">
+    <link rel="stylesheet" href="{% static 'final.css'%}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" role="navigation"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand mr-auto"
+                href="#"><img src="{% static '/logo.png'%}" alt="logo image" id="logo">Random Password</a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="container">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#" name="Home Page">Home</a></li>
+                        <li class="nav-item "><a class="nav-link" href="blog" name="Blog Page">Blog</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#address" name="Contact Page">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container" id="content2">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text" role="text"> WOW!! Your Password is</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="alert alert-success"><br><br>{{password}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href='back' role="button" class="btn" id="home">
+                    <h3>Home <i class="fa fa-home"></i></h3>
+                </a>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-12"> <a href="download" download role="button" class="btn" id="download">Download&nbsp;<i class="fa fa-download"></i></a></div>
+        </div>
+    </div><br>
+    <p>* Reload the page to generate new password</p>
+    <p>* we don't save that password for user's safety so you are requested to download it</p><br>
+    <footer>
+        <div class="container" id="content3">
+            <div class="row">
+                <div class="col-12"> <span class="facebook-icon"><i class="fa fa-facebook fa-lg"></i></span> <span class="padding"><i class="fa fa-twitter fa-lg"></i></span> <span class="padding"><i class="fa fa-instagram fa-lg"></i></span> <span class="padding"><i class="fa fa-envelope-o fa-lg"></i></span>                    </div>
+                <div class="col-auto col-sm-12" style="margin-top: 2%;"> <span class="nav-text">Home |</span> <span class="nav-text"> Blog |</span> <span class="nav-text"> Feature Request |</span> <span class="nav-text"> Privacy Policy</span> </div>
+                <div class="col-12" id="copyright"> &copy; 2019-2020 The Password Company </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'Depd/jquery.slim.min.js'%}"></script>
+    <script src="{% static 'Depd/popper.min.js'%}"></script>
+    <script src="{% static 'Depd/bootstrap.min.js'%}"></script>
+</body>
+
+</html>
+
+
+
+
+Open Multiple URLs | Compress Videos | Online PDF Converter
+© 2018 Unminify2.com | Privacy
