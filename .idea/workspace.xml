@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="66bb8a64-26a1-4341-b44f-0f7ae38997d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/password-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/password-master.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Random-Password-master/home/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/home/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Random-Password-master/home/templates/final.html" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/home/templates/final.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Random-Password-master/home/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/home/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-Password-master/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-Password-master/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-Password-master/passwordgenerator/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/passwordgenerator/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-Password-master/passwordgenerator/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Password-master/passwordgenerator/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,8 +50,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -37,5 +67,23 @@
       <updated>1597845296320</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1597988343029">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1597988343029" />
   </component>
 </project>

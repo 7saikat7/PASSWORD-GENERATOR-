@@ -11,7 +11,7 @@ def back(request):
 def password(request):
 
     characters=list('abcdefghijklmnopqrst')
-    length=int(request.GET.get('select number',12))
+    length=int(request.GET.get('select number',))
     global newpassword
     newpassword = ''
     if request.GET.get('specialcharacter'):
@@ -31,3 +31,5 @@ def blog(request):
     return render(request,'blog.html')
 def privacy(request):
     return render(request,'privacy.html')
+def sitemap(request):
+    return render(request,'sitemap.html')
